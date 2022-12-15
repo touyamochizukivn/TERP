@@ -9,12 +9,16 @@
         "**/__pycache__": true,
         "**/__init__.py": true,
         "**/asgi.py": true,
-        "**/wsgi.py": true
+        "**/wsgi.py": true,
+        "**/tests.py": true,
+        "**/apps.py": true
     },
     "hide-files.files": [
         "**/__pycache__",
         "**/__init__.py",
         "**/asgi.py",
-        "**/wsgi.py"
+        "**/wsgi.py",
+        "**/tests.py",
+        "**/apps.py"
     ]
 }
