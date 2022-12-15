@@ -5,7 +5,14 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true
+        "**/Thumbs.db": true,
+        "**/__init__.py": true,
+        "**/asgi.py": true,
+        "**/wsgi.py": true
     },
-    "hide-files.files": []
+    "hide-files.files": [
+        "**/__init__.py",
+        "**/asgi.py",
+        "**/wsgi.py"
+    ]
 }
