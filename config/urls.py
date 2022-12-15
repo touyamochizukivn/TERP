@@ -22,3 +22,12 @@ urlpatterns = [
     # path('core/', include('core.urls')),
     # path('auth/', include('authentication.urls')),
 ]
+
+
+from django.conf.urls.i18n import i18n_patterns
+
+urlpatterns += i18n_patterns(
+    path('core', include("core.urls")),
+)
+
+
