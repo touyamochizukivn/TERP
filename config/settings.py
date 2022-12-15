@@ -141,8 +141,8 @@ LOGIN_URL = 'login'
 from django.utils.translation import gettext_lazy as _
 
 LANGUAGES = [
-    ('vi', _('Vietnamese')),
     ('en', _('English')),
+    ('vi', _('Vietnamese')),
 ]
 
 LOCALE_PATHS = (

@@ -24,10 +24,11 @@ urlpatterns = [
 ]
 
 
+from django.urls import re_path as url
 from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns += i18n_patterns(
-    path('core', include("core.urls")),
+    url(r'^core/', include("core.urls")),
+    url(r'^i18n/', include('django.conf.urls.i18n')),
 )
-
 
