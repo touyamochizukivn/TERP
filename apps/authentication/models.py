@@ -1,8 +1,12 @@
+import datetime
+
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, UserManager
 from django.contrib.auth.validators import UnicodeUsernameValidator
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
+
+from common.utils import get_time_now
 
 
 GENDER_CHOICES = (
@@ -80,6 +84,6 @@ class Profile(models.Model):
 
     def save(self, *args, **kwargs):
         if self.gender == 'Female':
-            self.avatar = 'images/avatar_default.jpg'
+            self.avatar = 'images/avatar_default2.jpg'
         return super().save(*args, **kwargs)
 

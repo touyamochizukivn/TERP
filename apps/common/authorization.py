@@ -2,19 +2,7 @@ from django.contrib.auth.decorators import user_passes_test
 from django.core.exceptions import PermissionDenied
 
 
-GROUPS = [
-    'System Admin',
-    'Sub Admin',
-    'HR',
-    'Inquiries',
-    'Accountant',
-    'AR Officer',
-    'AP Officer',
-    'Production Manager',
-    'Stock Manager',
-    'Sale Man'
-]
-
+GROUPS = ['System Admin', 'Sub Admin', 'HR', 'Inquiries', 'Accountant', 'AR Officer', 'AP Officer', 'Production Manager', 'Stock Manager', 'Sale Man']
 GROUP_CHOICE = [(g, g) for g in GROUPS]
 
 def group_required(*group_names, login_url=None, raise_exception=False):

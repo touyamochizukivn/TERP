@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
+    # 'core',
+    'authentication',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,3 +127,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Change Project root
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
+
+
+# Authentication settings
+AUTH_USER_MODEL = 'authentication.User'
+
+LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = 'login'
