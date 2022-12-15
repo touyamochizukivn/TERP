@@ -6,11 +6,13 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
+        "**/__pycache__": true,
         "**/__init__.py": true,
         "**/asgi.py": true,
         "**/wsgi.py": true
     },
     "hide-files.files": [
+        "**/__pycache__",
         "**/__init__.py",
         "**/asgi.py",
         "**/wsgi.py"
